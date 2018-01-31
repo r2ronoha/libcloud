@@ -497,6 +497,66 @@ INSTANCE_TYPES = {
             'cpu': 32
         }
     },
+    'c5.large': {
+        'id': 'c5.large',
+        'name': 'Compute Optimized Large Instance',
+        'ram': GiB(4),
+        'disk': 0,  # EBS only
+        'bandwidth': None,
+        'extra': {
+            'cpu': 2
+        }
+    },
+    'c5.xlarge': {
+        'id': 'c5.xlarge',
+        'name': 'Compute Optimized Extra Large Instance',
+        'ram': GiB(8),
+        'disk': 0,  # EBS only
+        'bandwidth': None,
+        'extra': {
+            'cpu': 4
+        }
+    },
+    'c5.2xlarge': {
+        'id': 'c5.2xlarge',
+        'name': 'Compute Optimized Double Extra Large Instance',
+        'ram': GiB(16),
+        'disk': 0,  # EBS only
+        'bandwidth': None,
+        'extra': {
+            'cpu': 8
+        }
+    },
+    'c5.4xlarge': {
+        'id': 'c5.4xlarge',
+        'name': 'Compute Optimized Quadruple Extra Large Instance',
+        'ram': GiB(32),
+        'disk': 0,  # EBS only
+        'bandwidth': None,
+        'extra': {
+            'cpu': 16
+        }
+    },
+    'c5.9xlarge': {
+        'id': 'c5.9xlarge',
+        'name': 'Compute Optimized Nine Extra Large Instance',
+        'ram': GiB(72),
+        'disk': 0,  # EBS only
+        'bandwidth': None,
+        'extra': {
+            'cpu': 36
+        }
+    },
+    'c5.18xlarge': {
+        'id': 'c5.18xlarge',
+        'name': 'Compute Optimized Eighteen Extra Large Instance',
+        'ram': GiB(144),
+        'disk': 0,  # EBS only
+        'bandwidth': None,
+        'extra': {
+            'cpu': 72
+        }
+    },
     'cr1.8xlarge': {
         'id': 'cr1.8xlarge',
         'name': 'High Memory Cluster Eight Extra Large',
@@ -850,26 +910,6 @@ INSTANCE_TYPES = {
             'cpu': 8
         }
     },
-    'x1.16xlarge': {
-        'id': 'x1.16xlarge',
-        'name': 'Memory Optimized Sixteen Extra Large instance',
-        'ram': GiB(976),
-        'disk': 1920,  # GB
-        'bandwidth': None,
-        'extra': {
-            'cpu': 64
-        }
-    },
-    'x1e.32xlarge': {
-        'id': 'x1e.32xlarge',
-        'name': 'Memory Optimized ThirtyTwo E Extra Large instance',
-        'ram': GiB(3904),
-        'disk': 2 * 1920,  # GB
-        'bandwidth': None,
-        'extra': {
-            'cpu': 128
-        }
-    },
     'x1.32xlarge': {
         'id': 'x1.32xlarge',
         'name': 'Memory Optimized ThirtyTwo Extra Large instance',
@@ -960,9 +1000,7 @@ REGION_DETAILS = {
             't2.small',
             't2.medium',
             't2.large',
-            'x1.16xlarge',
-            'x1.32xlarge',
-            'x1e.32xlarge',
+            'x1.32xlarge'
         ]
     },
     # US West (Northern California) Region
@@ -1111,9 +1149,7 @@ REGION_DETAILS = {
             't2.small',
             't2.medium',
             't2.large',
-            'x1.16xlarge',
-            'x1.32xlarge',
-            'x1e.32xlarge',
+            'x1.32xlarge'
         ]
     },
     # US West (Oregon) Region
@@ -1193,9 +1229,7 @@ REGION_DETAILS = {
             't2.small',
             't2.medium',
             't2.large',
-            'x1.16xlarge',
-            'x1.32xlarge',
-            'x1e.32xlarge',
+            'x1.32xlarge'
         ]
     },
     # EU (Ireland) Region
@@ -1272,9 +1306,7 @@ REGION_DETAILS = {
             't2.small',
             't2.medium',
             't2.large',
-            'x1.16xlarge',
-            'x1.32xlarge',
-            'x1e.32xlarge',
+            'x1.32xlarge'
         ]
     },
     # EU (London) Region
@@ -1315,6 +1347,12 @@ REGION_DETAILS = {
             'c4.2xlarge',
             'c4.4xlarge',
             'c4.8xlarge',
+            'c5.large',
+            'c5.xlarge',
+            'c5.2xlarge',
+            'c5.4xlarge',
+            'c5.9xlarge',
+            'c5.18xlarge',
             'cg1.4xlarge',
             'g2.2xlarge',
             'g2.8xlarge',
@@ -1344,9 +1382,7 @@ REGION_DETAILS = {
             't2.small',
             't2.medium',
             't2.large',
-            'x1.16xlarge',
-            'x1.32xlarge',
-            'x1e.32xlarge',
+            'x1.32xlarge'
         ]
     },
     # EU (Frankfurt) Region
@@ -1405,9 +1441,7 @@ REGION_DETAILS = {
             't2.small',
             't2.medium',
             't2.large',
-            'x1.16xlarge',
-            'x1.32xlarge',
-            'x1e.32xlarge',
+            'x1.32xlarge'
         ]
     },
     # Asia Pacific (Mumbai, India) Region
@@ -1523,9 +1557,7 @@ REGION_DETAILS = {
             'r4.4xlarge',
             'r4.8xlarge',
             'r4.16xlarge',
-            'x1.16xlarge',
-            'x1.32xlarge',
-            'x1e.32xlarge',
+            'x1.32xlarge'
         ]
     },
     # Asia Pacific (Tokyo) Region
@@ -1598,9 +1630,7 @@ REGION_DETAILS = {
             't2.small',
             't2.medium',
             't2.large',
-            'x1.16xlarge',
-            'x1.32xlarge',
-            'x1e.32xlarge',
+            'x1.32xlarge'
         ]
     },
     # Asia Pacific (Seoul) Region
@@ -1651,9 +1681,7 @@ REGION_DETAILS = {
             't2.small',
             't2.medium',
             't2.large',
-            'x1.16xlarge',
-            'x1.32xlarge',
-            'x1e.32xlarge',
+            'x1.32xlarge'
         ]
     },
     # South America (Sao Paulo) Region
@@ -1763,9 +1791,7 @@ REGION_DETAILS = {
             't2.small',
             't2.medium',
             't2.large',
-            'x1.16xlarge',
-            'x1.32xlarge',
-            'x1e.32xlarge',
+            'x1.32xlarge'
         ]
     },
     # Canada (Central) Region
@@ -1835,9 +1861,7 @@ REGION_DETAILS = {
             't2.small',
             't2.medium',
             't2.large',
-            'x1.16xlarge',
-            'x1.32xlarge',
-            'x1e.32xlarge',
+            'x1.32xlarge'
         ]
     },
     # GovCloud Region
@@ -4864,7 +4888,7 @@ class BaseEC2NodeDriver(NodeDriver):
 
     def ex_authorize_security_group_ingress(self, id, from_port, to_port,
                                             cidr_ips=None, group_pairs=None,
-                                            protocol='tcp', description=None):
+                                            protocol='tcp'):
         """
         Edit a Security Group to allow specific ingress traffic using
         CIDR blocks or either a group ID, group name or user ID (account).
@@ -4898,9 +4922,6 @@ class BaseEC2NodeDriver(NodeDriver):
         :param      protocol: tcp/udp/icmp
         :type       protocol: ``str``
 
-        :param      description: description to be added to the rules inserted
-        :type       description: ``str``
-
         :rtype: ``bool``
         """
 
@@ -4909,8 +4930,7 @@ class BaseEC2NodeDriver(NodeDriver):
                                                         from_port,
                                                         to_port,
                                                         cidr_ips,
-                                                        group_pairs,
-                                                        description)
+                                                        group_pairs)
 
         params["Action"] = 'AuthorizeSecurityGroupIngress'
 
@@ -7433,7 +7453,7 @@ class BaseEC2NodeDriver(NodeDriver):
 
     def _get_common_security_group_params(self, group_id, protocol,
                                           from_port, to_port, cidr_ips,
-                                          group_pairs, description=None):
+                                          group_pairs):
         """
         Return a dictionary with common query parameters which are used when
         operating on security groups.
@@ -7452,9 +7472,6 @@ class BaseEC2NodeDriver(NodeDriver):
 
                 ip_ranges['IpPermissions.1.IpRanges.%s.CidrIp'
                           % (index)] = cidr_ip
-                if description is not None:
-                    ip_ranges['IpPermissions.1.IpRanges.%s.Description'
-                          % (index)] = description
 
             params.update(ip_ranges)
 
